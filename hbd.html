@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEJUTAN ULTAH</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+  <div class="alert" id="customAlert">
+    <div class="alert-text">KLIK KUE NYA BUAT NAMBAHIN LILIN TERUS COBA TIUP</div>
+</div>
+    <div class="container">
+        <section class="section pink-section" id="main">
+          <div class="decorations">
+            <span class="decoration flower-1">🌸</span>
+            <span class="decoration flower-2">🌺</span>
+            <span class="decoration flower-3">🌹</span>
+            <span class="decoration bear-1">🧸</span>
+            <span class="decoration bear-2">🐻</span>
+            <span class="decoration heart-1">❤️</span>
+            <span class="decoration heart-2">💝</span>
+            <span class="decoration heart-3">💖</span>
+        </div>
+        <div class="audio-player-container">
+          <div  style="position: absolute; bottom: 600px;" class="custom-audio-player">
+              <audio id="audio" class="hidden-audio">
+                  <source src="hbd.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio>
+              <button class="play-button" onclick="togglePlay()">
+                  <span class="play-icon"></span>
+                  <span class="pause-icon"></span>
+              </button>
+          </div>
+      </div>
+      <div style="position: absolute; bottom: 450px;" class="typing-text message"></div>
+         <button id="micButton" class="btn" onclick="toggleSection()">Buka</button>
+        
+        </section>
+        
+        <section class="section gray-section" id="hidden">
+            <div class="line bottom-line"></div>
+            <div class="triangle bottom-triangle" onclick="toggleSection()"></div>
+            <div class="candle-count-display">
+                HAPPY BIRTHDAY XIXI!
+              </div>
+              <div class="cake">
+                <div id="candleCount" style="display:none;"></div>
+                <div class="plate"></div>
+                <div class="layer layer-bottom"></div>
+                <div class="layer layer-middle"></div>
+                <div class="layer layer-top"></div>
+                <div class="icing"></div>
+                <div class="drip drip1"></div>
+                <div class="drip drip2"></div>
+                <div class="drip drip3"></div>
+              </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.2"></script>
+</body>
+</html>
