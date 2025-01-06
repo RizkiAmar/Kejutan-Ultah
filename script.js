@@ -163,7 +163,7 @@ mainSection.classList.toggle('slide-up');
 showAlert();
 }
 
-const texts = ['Halo sengkuu....', 'Aku puya sesuatu buat kamu....', 'Pokoknya mah spesial buat Winda seorang hehe....','----Made With LOVE----'];
+const texts = ['Halo sengkuu....', 'Aku punya sesuatu buat kamu....', 'Pokoknya mah spesial buat Winda seorang hehe....','----Made With LOVE----'];
 const typingText = document.querySelector('.typing-text');
 let textIndex = 0;
 let charIndex = 0;
